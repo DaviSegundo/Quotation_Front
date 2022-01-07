@@ -3,7 +3,6 @@ import HighchartsReact from 'highcharts-react-official';
 import React, { useEffect } from 'react';
 import api from '../../services/api';
 import {Button, Dropdown, ButtonGroup} from 'react-bootstrap';
-import { Container } from './styles';
 
 interface Props{
     date:string 
@@ -116,7 +115,7 @@ export default function Home(){
             highcharts={Highcharts}
             options={options}/>
 
-        <Container>
+        <div style={{display: 'flex', justifyContent:'space-evenly'}}>
             <Dropdown as={ButtonGroup} align={{ lg: 'start' }}>
                 <Button style={{width:130}}>Currency: {selectedCurrency === "brl" ? "BRL" : selectedCurrency}</Button>
                 <Dropdown.Toggle split id="dropdown-split-basic"/>
@@ -143,6 +142,6 @@ export default function Home(){
                     ))}
                 </Dropdown.Menu>  
             </Dropdown>
-        </Container>
+        </div>
         </>)
 }
