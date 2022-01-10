@@ -83,7 +83,7 @@ export default function Home(){
         apidata.map((quotation) => {
             dates_aux.push(quotation.date)
             quotations_aux.push(parseFloat(quotation.currency.toFixed(3)))
-        })
+        return true})
 
         setDates(dates_aux)
         setQuotations(quotations_aux)
