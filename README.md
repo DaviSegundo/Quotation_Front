@@ -33,6 +33,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+## Deployment Notes
+
+This project has an automatic deployment pipeline, that is, CI/CD, for that GitHub Actions was used to do the workflow. Some of the details were building a Docker container and deploying it to an AWS LightSail instance.
+
 ### Docker image
 
 You can pull the Docker image for local testing with the command:
