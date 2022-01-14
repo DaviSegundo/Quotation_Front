@@ -32,3 +32,25 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+### Docker image
+
+You can pull the Docker image for local testing with the command:
+
+```sh
+$ docker pull davisegundo88/front_quotation_container:main
+```
+
+Or you can use the Dockerfile to perform the local build:
+
+```sh
+$ docker build -f Dockerfile -t davisegundo88/quotation_front .
+```
+
+## Authors
+
+Davi Segundo Pinheiro – davisp2009@hotmail.com
+
+You can find me here at: 
+Github - [Davi S.P](https://github.com/DaviSegundo)
+LinkedIn - [Davi Segundo](https://www.linkedin.com/in/davi-segundo-881401210/)
